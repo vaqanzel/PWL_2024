@@ -77,4 +77,9 @@ Route:: resource('photos', PhotoController::class);
 //     'create', 'store', 'update', 'destroy'
 // ]);
 
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Valentina Santi Grehasta']);
+// });
+Route::get('/greeting', [WelcomeController::class,
+'greeting']);
 
